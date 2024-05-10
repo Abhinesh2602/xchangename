@@ -26,6 +26,7 @@ function App() {
           value={inputs.firstName}
           onChange={handleChange}
           required
+          type="text"
         />
         <br />
         <label htmlFor="lastname">Last Name:</label>
@@ -34,6 +35,7 @@ function App() {
           value={inputs.lastName}
           onChange={handleChange}
           required
+          type="text"
         />
         <br />
         <button type="submit">Submit</button>
