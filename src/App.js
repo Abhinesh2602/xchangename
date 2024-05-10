@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <h1>Full Name Display</h1>
       <form onSubmit={handleSubmit}>
-        <label name="firstname">First name:</label>
+        <label name="firstname">First Name:</label>
         <input
           name="firstName"
           value={inputs.firstName}
@@ -34,7 +34,7 @@ function App() {
           onChange={handleChange}
         />
         <br />
-        <input type="submit" value="submit" onChange={handleChange} />
+        <input type="Submit" value="submit" onChange={handleChange} />
       </form>
       {submit ? <p>Full Name: {fullName}</p> : ""}
     </div>
