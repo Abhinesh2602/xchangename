@@ -13,14 +13,14 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    setSubmit(true);
+    if (inputs.firstName !== "" && inputs.lastName !== "") setSubmit(true);
   }
 
   return (
     <div className="App">
       <h1>Full Name Display</h1>
       <form onSubmit={handleSubmit}>
-        <label name="firstname">First Name:</label>
+        <label htmlFor="firstname">First Name:</label>
         <input
           name="firstName"
           value={inputs.firstName}
@@ -28,7 +28,7 @@ function App() {
           required
         />
         <br />
-        <label name="lastname">Last Name:</label>
+        <label htmlFor="lastname">Last Name:</label>
         <input
           name="lastName"
           value={inputs.lastName}
